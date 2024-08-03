@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .wrapper{
+            width: 70%;
+            height: 80vh;
+            border: 2px solid black;   
+            margin: 10vh auto;
+            background-image: url(Colorful\ Modern\ Geometric\ Certificate\ of\ Participation.png);
+            background-size: cover;
+            position: relative;
+        }
+        .wrapper h1{
+            position: absolute;
+            left: 45vh;
+            top: 25vh;
+            font-family: "Alex Brush", cursive;
+            font-size: 80px;
+        }
+        .wrapper p{
+            position: absolute;
+            left: 20vh;
+            top:45vh;
+            right: 20vh;
+            text-align: justify;
+            font-size: 14px;
+            font-family: "Roboto", sans-serif;
+        }
+        #name{
+            font-size: 16px;
+            color:  solid black;
+            text-decoration: underline;
+            font-family: "Roboto", sans-serif;
+        }
+        #company{
+            font-size: 16px;
+            color:  solid black;
+            text-decoration: underline;
+            font-family: "Roboto", sans-serif;
+        }
+        #course{
+            font-size: 16px;
+            color: solid black;
+            text-decoration: underline;
+            font-family: "Roboto", sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 id="title"> </h1>
+        <p>This certificate is presented to <span id="name"></span> in recognition of their exceptional performance and outstanding
+            achievements in <span id="company" ></span> on. Your hard work, dedication, and perseverance have been
+            instrumental in your success, on <span id="course"></span> and we are honored to recognize your accomplishments.
+            “This certificate is presented to in recognition of their exceptional performance and outstanding
+            achievements in  on . Your hard work, dedication, and perseverance have been
+            instrumental in your success, on Python Full stack and we are honored to recognize your accomplishments.</p>
+    </div>
+    <script>
+        let title=prompt("Enter Your Full Name");
+        let name=prompt("Enter Your Name");
+         let company=prompt("Enter Your Company Name");
+         let course=prompt("Enter Your Course Name");
+        
+         document.getElementById('title').innerHTML=title;
+         document.getElementById('name').innerHTML=name;
+         document.getElementById('company').innerHTML=company;
+         document.getElementById('course').innerHTML=course;
+
+    </script>
+
+</body>
+</html>
